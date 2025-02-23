@@ -1,0 +1,40 @@
+## Clock
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property PACKAGE_PIN E3 [get_ports clk]
+create_clock -period 10.000 -name sys_clk_pin -waveform [0.000 5.000] -add [get_ports clk]
+
+##UART Pins
+set_property IOSTANDARD LVCMOS33 [get_ports RxD]
+set_property PACKAGE_PIN C4 [get_ports RxD]
+set_property IOSTANDARD LVCMOS33 [get_ports TxD]
+set_property PACKAGE_PIN D4 [get_ports TxD]
+
+##Enable & Reset Switches
+set_property IOSTANDARD LVCMOS33 [get_ports Rx_enable]
+set_property PACKAGE_PIN P4 [get_ports Rx_enable]
+set_property IOSTANDARD LVCMOS33 [get_ports Rx_reset]
+set_property PACKAGE_PIN P3 [get_ports Rx_reset]
+set_property IOSTANDARD LVCMOS33 [get_ports Tx_start]
+set_property PACKAGE_PIN R3 [get_ports Tx_start]
+set_property IOSTANDARD LVCMOS33 [get_ports Tx_reset]
+set_property PACKAGE_PIN T1 [get_ports Tx_reset]
+
+##LEDs
+set_property IOSTANDARD LVCMOS33 [get_ports done]
+set_property PACKAGE_PIN P2 [get_ports done]
+set_property IOSTANDARD LVCMOS33 [get_ports data[0]]
+set_property PACKAGE_PIN T8 [get_ports data[0]]
+set_property IOSTANDARD LVCMOS33 [get_ports data[1]]
+set_property PACKAGE_PIN V9 [get_ports data[1]]
+set_property IOSTANDARD LVCMOS33 [get_ports data[2]]
+set_property PACKAGE_PIN R8 [get_ports data[2]]
+set_property IOSTANDARD LVCMOS33 [get_ports data[3]]
+set_property PACKAGE_PIN T6 [get_ports data[3]]
+set_property IOSTANDARD LVCMOS33 [get_ports data[4]]
+set_property PACKAGE_PIN T5 [get_ports data[4]]
+set_property IOSTANDARD LVCMOS33 [get_ports data[5]]
+set_property PACKAGE_PIN T4 [get_ports data[5]]
+set_property IOSTANDARD LVCMOS33 [get_ports data[6]]
+set_property PACKAGE_PIN U7 [get_ports data[6]]
+set_property IOSTANDARD LVCMOS33 [get_ports data[7]]
+set_property PACKAGE_PIN U6 [get_ports data[7]]
